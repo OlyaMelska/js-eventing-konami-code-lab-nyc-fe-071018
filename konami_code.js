@@ -4,7 +4,7 @@ let tracker = 0;
 
 function onKeyDownHandler(event) {
   // Write your JavaScript code inside the init() function
-  const key = parseInt(e.detail || e.which);
+  const key = parseInt(event.detail || event.which);
   
     if(tracker === code.length){
       event.preventDefault()
