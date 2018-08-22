@@ -6,6 +6,10 @@ let tracker = 0;
 function init() {
   // Write your JavaScript code inside the init() function
   body.addEventListener('keydown', (event) => {
+    if(tracker === code.length){
+      event.preventDefault()
+      return
+    }
     if(event.which === code[tracker]){
       console.log('success')
       tracker++;
