@@ -17,7 +17,7 @@ function onKeyDownHandler(event) {
     }
     else{
       console.log('mistake')
-      alert('The wrong code is entered:')
+      alert('The wrong code is entered!')
       tracker = 0;
     }
 }
