@@ -19,7 +19,7 @@ function init() {
     }
     else{
       console.log('mistake')
-      alert('Wrong symbol')
+      alert('The wrong code is entered:')
       tracker = 0;
     }
   })
