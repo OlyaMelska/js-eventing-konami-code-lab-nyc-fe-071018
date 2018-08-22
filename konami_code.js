@@ -4,11 +4,13 @@ let tracker = 0;
 
 function onKeyDownHandler(event) {
   // Write your JavaScript code inside the init() function
+  const key = parseInt(e.detail || e.which);
+  
     if(tracker === code.length){
       event.preventDefault()
       return
     }
-    if(event.which === code[tracker]){
+    if(key === code[tracker]){
       console.log('success')
       tracker++;
       if(tracker === code.length){
