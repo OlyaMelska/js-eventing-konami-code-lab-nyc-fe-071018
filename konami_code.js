@@ -12,7 +12,7 @@ function onKeyDownHandler(event) {
       console.log('success')
       tracker++;
       if(tracker === code.length){
-        alert('you found it!')
+        alert('Hurray!')
       }
     }
     else{
