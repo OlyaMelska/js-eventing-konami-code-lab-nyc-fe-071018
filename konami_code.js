@@ -4,7 +4,7 @@ let tracker = 0;
 
 function onKeyDownHandler(event) {
   // Write your JavaScript code inside the init() function
-  body.addEventListener('keydown', (event) => {
+{
     if(tracker === code.length){
       event.preventDefault()
       return
@@ -21,7 +21,11 @@ function onKeyDownHandler(event) {
       alert('The wrong code is entered:')
       tracker = 0;
     }
-  })
 }
 
-onKeyDownHandler()
+
+function init(){
+    body.addEventListener('keydown', onKeyDownHandler)
+}
+
+init()
